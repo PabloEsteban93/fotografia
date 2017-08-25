@@ -2,46 +2,37 @@
 <html>
   <head>
     <title>Fotografia</title>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
   	<link rel="stylesheet" href="css/estilos.css">
-  	<meta charset="utf-8">
+  	<meta charset="utf-8" >
   </head>
 <div id="contenido">
   <body>
-      <header id="encabezado">
-      <h1> Comenzando con la fotografía </h1>
-      <nav id="menu-principal">
-        <div>
-            <div class="inicio"><a href="index.html">Inicio</a></div>
-            <div class="paisajes"><a href="paisajes.html">Paisajes</a></div>
-            <div class="retratos"><a href="retratos.html">Retratos</a></div>
-         </div>
-       </nav>
+    <header id="encabezado">
+      <div class="titulo"><h2> Comenzando con la fotografía </h2></div>
+      <div class="menu"><p>
+          <a href="index.html" class="inicio">Inicio</a> <a href="paisajes.html" class="paisajes">Paisajes</a> <a href="retratos.html" class="retratos">Retratos</a>
+      </p></div>
     </header>
-
-     <section>
-  	    <div class="contenedor">
-    	   <div id="imagen1">
-    		   <img src="imagenes/imagen1.jpg" >
-    	</div>
-      <div id="imagen2">
-    		<img src="imagenes/imagen2.jpg" >
-    	</div>
-    	<div id="imagen3">
-    			<img src="imagenes/imagen3.jpg" >
-    		</div>
-    		<div id="imagen4">
-    			<img src="imagenes/imagen4.jpg" >
-    		</div>
-    	</div>
-  </section>
+     <section id="principal">
+  	  <div class="imagen1">
+      	 <img src="imagenes/paginap/paisajemar.jpg" alt="arbol" width="80%" height="80%">
+       	</div>
+    </section>
+    <section id="secundaria">
+      <div class="imagen2">
+      	<img src="imagenes/paginap/paisajemonta.jpg" alt="cielo" width="80%" height="80%"> <p><a href="paisajes.html">Paisajes</a></p>
+      </div>
+      <div class="imagen3">
+    		<img src="imagenes/paginap/avengers.jpg" alt="ladera" width="80%" height="80%"> <p><a href="retratos.html">Retratos</a></p>
+      </div>
+    </section>
   <footer>
     <div id="Contacto">
       <h2>Contacto</h2>
-      <ol>
-        <li>pabloesteban2393@hotmail.com</li>
-        <li>Mariana de Jesus y Quito</li>
-        <li>Telefono:0995030895</li>
-      </ol>
+      <p class="item">pabloesteban2393@hotmail.com</p>
+      <p class="item">Mariana de Jesus y Quito</p>
+      <p class="item">Telefono:0995030895</p>
     </div>
     <div id="Terminos">
       <h2>Términos</h2>
@@ -49,19 +40,15 @@
     </div>
     <div id="redes-sociales">
       <h2>Redes Sociales</h2>
-      <ol>
-        <li>facebook</li>
-        <li>youtube</li>
-        <li>@twitter</li>
-      </ol>
+      <p class="item"><img class="icono" src="imagenes/iconos/fb-logo.png" alt="fblogo"></img> facebook</p>
+      <p class="item"><img class="icono" src="imagenes/iconos/twitter-logo.jpg" alt="twitterlogo"></img> @twitter</p>
+      <p class="item"><img class="icono" src="imagenes/iconos/youtube-icon.png" alt="youtubelogo"></img> youtube</p>
     </div>
     <div id="Derechos">
       <h2>Derechos</h2>
-      <ol>
-        <li>Pablo Aguilar</li>
-        <li>Simbolo de copyright</li>
-        <li>2017</li>
-      </ol>
+      <p class="item"> Pablo Aguilar</p>
+      <p class="item">Simbolo de copyright</p>
+      <p class="item">2017</p>
     </div>
   </footer>
   </body>
