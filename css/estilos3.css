@@ -9,9 +9,37 @@ header {
 	}
 header h2 {
 	color: white;
-	text-shadow: 2px, #02010a;
+	text-shadow: 2px 2px 2px #02010a;
   display: inline;
+	}
+	.imagen2>img, .imagen3>img, .imagen4>img,.imagen5>img, .imagen6>img{
+	border: 2px;
+	box-shadow: 2px 2px 2px 2px black;
+	}
+	.imagen1 {
+		filter: blur(10px);
+	}
+	.imagen2, .imagen4, .imagen6{
+		filter: grayscale(100%);
+	}
+	.imagen3 {
+		filter: sepia(90%);
+	}
+	@keyframes todo {
+		0% {
+			margin-top: 150%;
+			}
+		60% {
+			margin-top: -5%;
+		}
+		100% {
+			margin-top: 0%;
 
+		}
+	}
+	header{
+		animation-name: todo;
+		animation-duration: 1s;
 	}
 header p {
 	display: inline;
@@ -24,7 +52,6 @@ header p {
 		text-decoration: none;
 	}
 	div>img{
-		padding: 10px;
 		text-align: center;
 	}
 
@@ -34,6 +61,7 @@ header p {
 		width: 90%;
   }
   #imagenes>div{
+		padding: 10px;
     box-sizing: border-box;
 	}
   #imagenes>div>img{
@@ -109,11 +137,12 @@ footer {
 			display: block;
 			word-spacing: 10px;
 			}
-		#contenido{
-		text-align: center;
-		width: 100%;
-		margin: auto;
-		}
+			
+	    #contenido{
+	  	text-align: center;
+	  	width: 100%;
+	  	margin: auto;
+	  	}
 		.imagen1{
 			width: 100%;
 			order: 1;
