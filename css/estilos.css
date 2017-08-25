@@ -4,6 +4,8 @@ body {
 	}
 header {
 	border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	-webkit-border-radius: 10px 10px 0 0;
 	background-color: #5b7989;
 	padding: 10px 10px 10px 10px;
 	}
@@ -23,37 +25,95 @@ header h2 {
 	#texto{
 		color: black;
 	}
-	@keyframes giro1 {
+	@-webkit-keyframes giro1 {
 		0% {
-			transform:rotate(0deg);
+			transform: rotate(0deg);
+			-ms-transform: rotate(0deg);
+			-webkit-transform: rotate(0deg);
 		}
 		50% {
 			transform:rotate(10deg);
+			-ms-transform: rotate(10deg);
+			-webkit-transform: rotate(10deg);
 		}
 		100% {
-			transform:rotate(0deg);
+			transform: rotate(0deg);
+			-ms-transform: rotate(0deg);
+			-webkit-transform: rotate(0deg);
+		}
+	}
+	@keyframes giro1 {
+		0% {
+			transform: rotate(0deg);
+			-ms-transform: rotate(0deg);
+			-webkit-transform: rotate(0deg);
+		}
+		50% {
+			transform:rotate(10deg);
+			-ms-transform: rotate(10deg);
+			-webkit-transform: rotate(10deg);
+		}
+		100% {
+			transform: rotate(0deg);
+			-ms-transform: rotate(0deg);
+			-webkit-transform: rotate(0deg);
 		}
 	}
   .imagen2>img:hover{
 		animation-name: giro1;
 		animation-duration: 2s;
 	}
-
-	@keyframes translacion {
+	@-webkit-keyframes translacion {
 		0% {
 			transform: translate(none);
+			-ms-transform: translate(none);
+			-webkit-transform: translate(none);
 			}
 		50% {
 			transform: translate(20px,-5px);
+			-ms-transform: translate(20px,-5px);
+			-webkit-transform: translate(20px,-5px);
 		}
 		100% {
 			transform: translate(none);
+			-ms-transform: translate(none);
+			-webkit-transform: translate(none);
+
+		}
+	}
+	@keyframes translacion {
+		0% {
+			transform: translate(none);
+			-ms-transform: translate(none);
+			-webkit-transform: translate(none);
+			}
+		50% {
+			transform: translate(20px,-5px);
+			-ms-transform: translate(20px,-5px);
+			-webkit-transform: translate(20px,-5px);
+		}
+		100% {
+			transform: translate(none);
+			-ms-transform: translate(none);
+			-webkit-transform: translate(none);
 
 		}
 	}
   .imagen3>img:hover{
 		animation-name: translacion;
 		animation-duration: 3s;
+	}
+	@-webkit-keyframes todo {
+		0% {
+			margin-top: 150%;
+			}
+		60% {
+			margin-top: -5%;
+		}
+		100% {
+			margin-top: 0%;
+
+		}
 	}
 	@keyframes todo {
 		0% {
@@ -128,6 +188,8 @@ header h2 {
 footer {
 	background-color: #C6d5c5;
 	border-radius: 0 0 10px 10px;
+	-moz-border-radius: 0 0 10px 10px;
+	-webkit-border-radius: 0 0 10px 10px;
 	display: flex;
 	flex-flow: row wrap;
 	}
@@ -166,7 +228,7 @@ footer {
     	word-spacing: 10px;
 			padding: 10px;
     	}
-		
+
     #contenido{
   	text-align: center;
   	width: 100%;
